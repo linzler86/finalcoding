@@ -1,0 +1,710 @@
+@charset "utf-8";
+
+/* 모바일용 CSS */
+/* 기본 CSS */
+.container {
+  width: 90%;
+  max-width: 1132px;
+  margin: 0 auto;
+}
+
+.cfixed:after,
+.container:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.blind {
+  position: absolute;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.sec-tit {
+  font-size: 42px;
+  color: rgb(187, 3, 28);
+  font-weight: normal;
+}
+
+.divider {
+  width: 90%;
+  max-width: 1132px;
+  margin: 0 auto;
+  margin-top: 77px;
+  background: #57000c;
+}
+
+.divider1 {
+  width: 90%;
+  max-width: 1132px;
+  margin: 0 auto;
+  background-color: #57000c;
+}
+
+.m-divider {
+  width: 20px;
+  margin: 0 auto;
+  margin-top: 77px;
+  background: #57000c;
+}
+
+/* 헤더 영역 CSS */
+.header {
+  position: relative;
+  padding: 18px 5%;
+}
+.header.cfixed {
+  background-color: #57000c;
+}
+.header .logo {
+  float: left;
+}
+
+.header .logo a {
+  font-size: 26px;
+  color: rgb(216, 216, 216);
+  font-weight: normal;
+}
+
+nav {
+  width: 100%;
+}
+
+.header .gnb {
+  display: none;
+  position: relative;
+  top: 40px;
+  width: 90%;
+  background: #57000c;
+}
+
+.header .gnb li {
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+
+.header .gnb li a {
+  display: block;
+  padding: 14px 0 14px 5%;
+  font-size: 14px;
+  color: rgb(216, 216, 216);
+  font-weight: bold;
+}
+
+.header .gnb li a:hover {
+  background-color: skyblue;
+  color: black;
+}
+
+.header .menu-toggle-btn {
+  float: right;
+  width: 20px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.header .menu-toggle-btn span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: rgb(216, 216, 216);
+}
+
+.header .menu-toggle-btn span:nth-child(2) {
+  margin: 5px 0;
+}
+
+/* 슬라이더 영역 CSS */
+.slider {
+  box-sizing: border-box;
+}
+
+.slider img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.autoSlides {
+  display: none;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  margin: auto;
+}
+
+.autoSlides img {
+  vertical-align: middle;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 디스플레이 영역 CSS */
+.content {
+  background-color: rgb(34, 23, 23);
+}
+.display-section {
+  margin-top: 0;
+  padding: 20px 0;
+  text-align: center;
+  background-color: #57000c;
+}
+
+.display-section .sec-tit {
+  margin-bottom: 30px;
+  color: rgb(216, 216, 216);
+}
+
+.display-section .desc {
+  font-family: "PT Serif";
+  color: rgb(216, 216, 216);
+  line-height: 1.9;
+}
+
+/* 프로모션 영역 CSS */
+.promotion-section {
+  margin-top: 68px;
+}
+
+.promotion-section .promo-list li {
+  margin-top: 52px;
+  text-align: center;
+}
+
+.promotion-section .promo-list li:first-child {
+  margin-top: 0;
+}
+
+.promotion-section .promo-list li img {
+  height: 200px;
+}
+
+.promotion-section .promo-list li h3 {
+  margin: 29px 0 20px 0;
+  color: #c21028;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.promotion-section .promo-list li p {
+  font-size: 16px;
+  font-family: "PT Serif";
+  color: rgb(216, 216, 216);
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+/*포트폴리오 css*/
+.port-section {
+  padding: 70px 0;
+  background-color: rgba(94, 42, 0, 0.24);
+}
+
+.port-section p {
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.port-section .sec-tit {
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+.halfpic-container {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 90%;
+  height: 270px;
+  margin: 0 auto;
+ 
+}
+.halfpic-img {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.halfpic-img img {
+  display: block;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.halfpic-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  width: 20px;
+  height: 20px;
+  background-color: #ff00009c;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+
+@media all and (min-width: 560px) {
+  .halfpic-container {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 50%;
+    height: 270px;
+    margin: 0 auto;
+   
+  }
+
+  .halfpic-img {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  
+}
+
+@media all and (min-width: 800px) {
+  .halfpic-container {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 40%;
+    height: 270px;
+    margin: 0 auto;
+   
+  }
+
+  .halfpic-img {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+/* 최근 글 영역 CSS */
+
+/*이미지 호버 시작*/
+.infowrite {
+  position: relative;
+  overflow: hidden;
+}
+.infowrite .top {
+  position: absolute;
+  bottom: 150%;
+  left: 30px;
+  z-index: 2;
+  color: rgb(216, 216, 216);
+  font-size: 26px;
+  font-weight: 900;
+  transition: all 0.35s;
+}
+.infowrite:hover .top {
+  bottom: 52%;
+}
+
+.infowrite::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.35s;
+}
+
+.card:hover .infowrite::after {
+  opacity: 1;
+}
+/*이미지 호버 끝*/
+
+.blog-section {
+  margin: 0 auto;
+  padding-top: 77px;
+  background-color: rgba(61, 45, 0, 0.24);
+  padding-bottom: 30px;
+}
+
+.blog-section .sec-tit {
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+.blog-section .blog-list li {
+  width: 100%;
+  margin-top: 45px;
+}
+
+.blog-section .blog-list li:first-child {
+  margin-top: 0;
+}
+
+.blog-section .blog-list li img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.blog-section .blog-list li time {
+  display: block;
+  margin: 11px 0 10px 0;
+  font-size: 11px;
+  color: rgb(216, 216, 216);
+}
+
+.blog-section .blog-list li h3 {
+  color: rgb(216, 216, 216);
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+/* contact CSS */
+.contact-section {
+  margin-top: 109px;
+  padding-bottom: 104px;
+}
+
+.contact-section .sec-tit {
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+.contact-section .form-box .form input {
+  padding-bottom: 20px;
+  margin-bottom: 14px;
+  background-color: rgb(216, 216, 216);
+  font-size: 20px;
+}
+
+.contact-section .form-box .textarea textarea {
+  height: 165px;
+  background-color: rgb(216, 216, 216);
+  font-size: 20px;
+}
+
+.contact-section .form-box .send-btn {
+  margin-top: 36px;
+  text-align: right;
+}
+
+.contact-section .form-box .send-btn button {
+  padding: 15px;
+  margin: 0;
+  border: 0;
+  font-size: 16px;
+  color: rgb(216, 216, 216);
+  background: #57000c;
+  font-family: "Montserrat";
+  cursor: pointer;
+}
+
+.iframe iframe {
+  width: 100%;
+  height: 600px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* 푸터 영역 CSS */
+.footer {
+  border: 1px solid #57000c;
+  background-color: #57000c;
+}
+
+.footer p {
+  margin: 30px 0;
+  color: rgb(216, 216, 216);
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+/* 태블릿용 CSS */
+@media all and (min-width: 922px) {
+  /* 기본 CSS */
+  .divider {
+    margin-top: 124px;
+  }
+
+  .m-divider {
+    margin-top: 124px;
+  }
+
+  /* 헤더 영역 CSS */
+  .header {
+    position: static;
+    padding: 28px 52px;
+  }
+
+  .header .gnb {
+    display: block !important;
+    position: static;
+    float: right;
+    width: auto;
+    margin-top: 6px;
+    background: none;
+    height: 100%;
+  }
+
+  .header .gnb li {
+    float: left;
+    margin-left: 21px;
+    border-bottom: 0;
+  }
+
+  .header .gnb li a {
+    padding: 0;
+    font-size: 16px;
+    color: rgb(216, 216, 216);
+  }
+
+  .header .menu-toggle-btn {
+    display: none !important;
+  }
+
+  .autoSlidesfade img {
+    width: 100%;
+  }
+
+  /* 디스플레이 영역 CSS */
+  .display-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+    
+.halfpic-container {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 50%;
+  height: 270px;
+  margin: 0 auto;
+ 
+}
+
+.halfpic-img {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+
+
+  /* 프로모션 영역 CSS */
+  .promotion-section {
+    margin-top: 110px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+  .promo-list {
+    width: 100%;
+  }
+  .promotion-section .promo-list li {
+    float: left;
+    width: 23.046875%;
+    /* 177px ÷ 768px*/
+    margin-left: 2.604166666666667%;
+    /* 20px ÷ 768px*/
+    margin-top: 0;
+  }
+
+  .promotion-section .promo-list li:first-child {
+    margin-left: 0;
+  }
+
+  /* 최근 글 영역 CSS */
+  .blog-section {
+    margin-top: 0;
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .blog-section .sec-tit {
+    margin-bottom: 76px;
+    margin-right: 10px;
+  }
+
+  .blog-section .blog-list li {
+    float: left;
+    width: 31.59722222222222%;
+    /* 242.6666666666667px ÷ 768px*/
+    margin-left: 2.604166666666667%;
+    /* 20px ÷ 768px*/
+    margin-top: 0;
+  }
+
+  .blog-section .blog-list li:first-child {
+    margin-left: 0;
+  }
+
+  /* 연락처 영역 CSS */
+  .contact-section {
+    margin-top: 176px;
+  }
+
+  .contact-section .sec-tit {
+    margin-bottom: 76px;
+  }
+
+  .contact-section .form-box .form,
+  .contact-section .form-box .textarea {
+    float: left;
+    width: 48%;
+  }
+
+  .contact-section .form-box .form {
+    margin-right: 2.604166666666667%;
+  }
+
+  .contact-section .form-box .form input:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* PC용 CSS */
+@media all and (min-width: 1132px) {
+  /* 디스플레이 영역 CSS */
+  .display-section {
+    text-align: left;
+  }
+
+  .display-section .sec-tit {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .display-section .desc {
+    position: relative;
+    float: right;
+    padding-left: 20px;
+    font-family: "PT Serif";
+    color: rgb(216, 216, 216);
+    line-height: 1.9;
+  }
+
+  .display-section .desc:before {
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 2px;
+    height: 44px;
+    background: rgb(216, 216, 216);
+    content: "";
+  }
+
+  /* 프로모션 영역 CSS */
+  .promotion-section .promo-list li {
+    width: 23.67491166077739%;
+    /* 268px ÷ 1132px*/
+    margin-left: 1.76678445229682%;
+    /* 20px ÷ 1132px*/
+  }
+
+  /* 최근 글 영역 CSS */
+  .blog-section .sec-tit {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .blog-section .blog-list {
+    float: right;
+    width: 74.5583038869258%;
+    /* 844px ÷ 1132px*/
+  }
+
+  .blog-section .blog-list li {
+    width: 31.75355450236967%;
+    /* 268px ÷ 844px*/
+    margin-left: 2.369668246445498%;
+    /* 20px ÷ 844px*/
+  }
+
+
+  
+  
+  .halfpic-container {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 30%;
+    height: 270px;
+    margin: 0 auto;
+   
+  }
+
+  .halfpic-img {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+
+  /* 연락처 영역 CSS */
+  .contact-section .sec-tit {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .contact-section .form-box {
+    float: right;
+    width: 74.5583038869258%;
+    /* 844px ÷ 1132px*/
+  }
+
+  .contact-section .form-box .form,
+  .contact-section .form-box .textarea {
+    width: 48.81516587677725%;
+    /* 412px ÷ 844px*/
+  }
+
+  .contact-section .form-box .form {
+    margin-right: 2.369668246445498%;
+    /* 20px ÷ 844px*/
+  }
+}

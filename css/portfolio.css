@@ -1,0 +1,362 @@
+@charset "utf-8";
+
+/* 모바일용 CSS */
+/* 기본 CSS */
+.container {
+  width: 90%;
+  max-width: 1132px;
+  margin: 0 auto;
+}
+
+.cfixed:after,
+.container:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.sec-tit {
+  font-size: 42px;
+  color: rgb(216, 216, 216);
+  font-weight: normal;
+}
+
+/* 헤더 영역 CSS */
+#wrap {
+  background-color: rgb(34, 23, 23);
+}
+.header.cfixed {
+  background-color: #57000c;
+}
+.header {
+  position: relative;
+  padding: 18px 5%;
+}
+
+.header .logo {
+  float: left;
+}
+
+.header .logo a {
+  font-size: 26px;
+  color: rgb(216, 216, 216);
+  font-weight: normal;
+}
+
+.header .gnb {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #57000c;
+}
+
+.header .gnb li {
+  border-bottom: 1px solid rgb(216, 216, 216);
+}
+.header .gnb li a {
+  display: block;
+  padding: 14px 0 14px 5%;
+  font-size: 14px;
+  color: rgb(216, 216, 216);
+  font-weight: bold;
+}
+
+.header .gnb li a:hover {
+  background-color: skyblue;
+  color: black;
+}
+
+.header .menu-toggle-btn {
+  float: right;
+  width: 20px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.header .menu-toggle-btn span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  background: rgb(216, 216, 216);
+}
+
+.header .menu-toggle-btn span:nth-child(2) {
+  margin: 5px 0;
+}
+
+/* 디스플레이 영역 CSS */
+.display-section {
+  margin-top: 59px;
+  text-align: center;
+}
+
+.display-section .sec-tit {
+  margin-bottom: 30px;
+}
+
+.display-section .desc {
+  font-family: "PT Serif";
+  color: rgb(216, 216, 216);
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+/* 컨텐츠 시작 */
+.report {
+  margin-top: 50px;
+  background-color: #301b11;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 120px;
+}
+.report .write {
+  padding: 18px 5%;
+  line-height: 180%;
+  color: rgb(216, 216, 216);
+}
+.report .code {
+  position: relative;
+  max-width: 70%;
+  height: 270px;
+  align-content: center;
+}
+
+.halfpic-container {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 90%;
+  height: 270px;
+  margin: 0 auto;
+ 
+}
+
+.halfpic-img {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.halfpic-img img {
+  display: block;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+.halfpic-slider {
+  position: absolute;
+  z-index: 9;
+  cursor: ew-resize;
+  width: 20px;
+  height: 20px;
+  background-color: #ff00009c;
+  opacity: 0.7;
+  border-radius: 50%;
+}
+/* 푸터 영역 CSS */
+.footer {
+  border: 1px solid #57000c;
+  background-color: #57000c;
+  margin-top: 104px;
+}
+
+.footer p {
+  margin: 21px 0;
+  color: rgb(216, 216, 216);
+  text-align: center;
+}
+
+/* 태블릿용 CSS */
+@media all and (min-width: 922px) {
+  /* 기본 CSS */
+  .divider {
+    margin-top: 124px;
+  }
+
+  .m-divider {
+    margin-top: 124px;
+  }
+
+  /* 헤더 영역 CSS */
+  .header {
+    position: static;
+    padding: 28px 52px;
+  }
+
+  .header .gnb {
+    display: block !important;
+    position: static;
+    float: right;
+    width: auto;
+    margin-top: 6px;
+    background: none;
+  }
+
+  .header .gnb li {
+    float: left;
+    margin-left: 21px;
+    border-bottom: 0;
+  }
+
+  .header .gnb li a {
+    padding: 0;
+    font-size: 16px;
+    color: rgb(216, 216, 216);
+  }
+
+  .header .menu-toggle-btn {
+    display: none !important;
+  }
+
+  /* 디스플레이 영역 CSS */
+  .display-section {
+    margin-top: 95px;
+  }
+
+  .display-section .desc {
+    font-size: 20px;
+  }
+
+  /* 버튼기능 */
+  .call_Wrap {
+    display: rowwrap;
+    padding-top: 20px;
+  }
+
+  .call_Content {
+    padding: 40px 44px;
+    font-size: 1.563em;
+    font-size: 1.563rem;
+    font-weight: bold;
+  }
+
+  
+.halfpic-container {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 50%;
+  height: 270px;
+  margin: 0 auto;
+ 
+}
+
+.halfpic-img {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+
+
+  .footer p {
+    margin: 34px 0;
+  }
+}
+
+@media all and (min-width: 560px) {
+  .halfpic-container {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 50%;
+    height: 270px;
+    margin: 0 auto;
+   
+  }
+
+  .halfpic-img {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  
+}
+
+@media all and (min-width: 800px) {
+  .halfpic-container {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 40%;
+    height: 270px;
+    margin: 0 auto;
+   
+  }
+
+  .halfpic-img {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* PC용 CSS */
+@media all and (min-width: 1132px) {
+  /* 디스플레이 영역 CSS */
+  .display-section {
+    text-align: left;
+  }
+
+  .display-section .sec-tit {
+    float: left;
+    margin-bottom: 0;
+  }
+
+  .display-section .desc {
+    position: relative;
+    float: right;
+    padding-left: 20px;
+    font-family: "PT Serif";
+    color: rgb(216, 216, 216);
+    line-height: 1.9;
+    font-size: 22px;
+  }
+
+  .display-section .desc:before {
+    display: block;
+    position: absolute;
+    top: 9px;
+    left: 0;
+    width: 2px;
+    height: 44px;
+    background: #57000c;
+    content: "";
+  }
+
+  
+  .halfpic-container {
+    box-sizing: border-box;
+    position: relative;
+    max-width: 30%;
+    height: 270px;
+    margin: 0 auto;
+   
+  }
+
+  .halfpic-img {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+
+  .call_Wrap {
+    display: flex;
+    padding-top: 80px;
+  }
+}

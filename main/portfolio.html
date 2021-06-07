@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Coding Film</title>
+<link rel="stylesheet" type="text/css" href="../css/reset.css">
+<link rel="stylesheet" type="text/css" href="../css/portfolio.css">
+<link rel="shortcut icon" href="../img/logo.ico">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/btn_Toggle.js"></script>
+<script src="/js/half.js"></script>
+</head>
+<body>
+    <div id="wrap"> <!--Wrap Start-->
+        <header class="header cfixed"> <!--Header Start-->
+            <h1 class="logo"><a href="../index.html">Coding Film</a></h1>
+            <nav>
+                <ul class="gnb">
+                    <li><a href="../index.html">메인화면</a></li>
+                    <li><a href="profile.html">내소개</a></li>
+                    <li><a href="portfolio.html">포트폴리오</a></li>
+                    <li><a href="hobby.html">취미(사진)</a></li>
+                    <li><a href="teamproject.html">팀프로젝트사이트</a></li>
+                </ul>
+            </nav>
+            <span class="menu-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </span>
+        </header> <!--Header End-->
+
+        <section class="content" style="background-color: rgba(94, 42, 0, 0.24);">
+            <section class="display-section">
+
+                <div class="container">
+                    <h2 class="sec-tit">Portfolio</h2>
+                    <p class="desc">
+                        python을 이용한 얼굴 인식 프로그램
+                    </p>
+                </div>
+
+                    <section class="report">
+                        <div class="write">
+                            python을 이용해 얼굴 인식 및 필터 씌우기를 공부했습니다. <br>
+                            먼저 기능 구현을 위해 openCV와 dlib, numpy가 필요하니 설치합니다. <br>
+                            그 외에도 머신 러닝된 외부 얼굴 인식 파일을 다운로드, 샘플 사진을 준비하면 준비는 끝입니다. <br>
+                            그럼 먼저 python dlib 라이브러리의 기본 제공 정면 얼굴 검출기를 detecter로 사용합니다. <br>
+                            그 이후 openCV로 이미지 파일 로드, 이미지의 사이즈를 조정합니다. <br>
+                             이미지 파일을 detectoer에 넣고 검출된 얼굴의 좌상단과 우하단을 기준으로 상자를 사진에 출력하게 합니다. <br>
+                        </div>
+                        <div class="codepic-container">
+                            <img src="../img/facedetect.png" alt="" class="code">   <br>
+                        </div>
+                        <div class="write">결과</div>
+                            <div class="halfpic-container">
+                                <div class="halfpic-img">
+                                    <img src="../img/matrix5.jpg" width="400px" height="270px">
+                                </div>
+                                <div class="halfpic-img halfpic-overlay">
+                                   <img src="../img/output.jpg" width="400px" height="270px">
+                                </div>
+                            </div>
+                        <div class="write">
+                            얼굴이 정상적으로 검출이 됐으니 이제 얼굴의 특징점, 즉 눈,코,입을 검출해 보겠습니다. <br>
+                            이때는 머신 러닝된 외부 검출기 파일이 필요합니다. 머신러닝으로 검출기를 만드는 법은 추후 공부 예정 입니다. <br>
+                            검출기는 얼굴의 특징점을 검출, 튜플타입의 행렬형태로 좌표를 저장하니 이 지점마다 흰색 점이 출력 되도록 합니다. <br>
+                        </div>
+                        <div class="codepic-container">
+                            <img src="../img/facedetect2.png" alt="" class="code">
+                        </div>
+                        <div class="write"> 결과 </div>
+                        <div class="halfpic-container">
+                            <div class="halfpic-img">
+                                <img src="../img/output.jpg" width="400px" height="270px">
+                            </div>
+                            <div class="halfpic-img halfpic-overlay">
+                               <img src="../img/output2.jpg" width="400px" height="270px">
+                            </div>
+                        </div>
+
+                    </section>
+            </section>
+        </section>
+
+        <footer class="footer">
+            <p class="copyright">COPYRIGHT&copy;2021 최용준 ALL RIGHTS RESERVED</p>
+        </footer>
+    </div>
+    <script>initComparisons();</script>
+</body>
+</html>
